@@ -1,1 +1,6 @@
-<p>employeedetails works!</p>
+<div>
+    <h4>Employee Details List</h4>
+    <ul *ngFor="let emp of emps">
+        <li>Name: {{emp.name}} Age:{{emp.age}} Gender:{{emp.gender}}</li>
+    </ul>
+</div>

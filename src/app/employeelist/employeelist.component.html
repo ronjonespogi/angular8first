@@ -1,1 +1,7 @@
-<p>employeelist works!</p>
+<div>
+    <h4>Employee List</h4>
+    <ul *ngFor="let emp of employees; index as x">
+        <li> {{ x+1 }} {{ emp.name }} </li>
+    </ul>
+</div>
+

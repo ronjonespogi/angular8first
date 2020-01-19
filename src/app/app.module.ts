@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FirstcomponentComponent } from './firstcomponent/firstcomponent.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
+import { EmployeeServiceService } from './MyServices/employee-service.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { EmployeedetailsComponent } from './employeedetails/employeedetails.comp
     NgbModule,BrowserModule,FormsModule
     
   ],
-  providers: [],
+  providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
